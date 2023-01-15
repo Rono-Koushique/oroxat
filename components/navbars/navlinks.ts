@@ -1,4 +1,4 @@
-export default [
+const allLinks = [
     {
         title: 'home',
         href: '/'
@@ -40,3 +40,5 @@ export default [
         href: '/renal-anaemia'
     },
 ]
+
+export default allLinks

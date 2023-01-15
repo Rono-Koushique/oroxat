@@ -22,7 +22,7 @@ export default function HomeIntro({}: Props) {
                         OROXAT (roxadustat) is the first HIF-PH inhibitor to
                         have gained approval for the treatment of adult patients
                         with symptomatic anaemia associated with CKD. It mimics
-                        the body's physiological response to hypoxia at high
+                        the body&apos;s physiological response to hypoxia at high
                         altitude3 by increasing production of erythropoietin and
                         improving iron availability. This increases haemoglobin
                         levels and red blood cell production, with reduced use
