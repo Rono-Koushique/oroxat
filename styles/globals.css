@@ -7,19 +7,3 @@
         @apply px-2
     }
 }
-
-.carousel-root, .carousel, .slider-wrapper, .slider {
-    height: 100%;
-}
-
-.slider-wrapper > ul {
-    height: 100%;
-}
-
-.animated {
-    height: 100%;
-}
-
-.slider > li {
-    height: 100% !important;
-}

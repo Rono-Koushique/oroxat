@@ -27,7 +27,6 @@ export default function Home() {
                 <section>
                     <Hero />
                 </section>
-
                 {/* introduction */}
                 <section>
                     <HomeIntro />

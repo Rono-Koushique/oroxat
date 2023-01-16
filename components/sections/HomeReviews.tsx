@@ -19,14 +19,17 @@ export default function HomeReviews({}: Props) {
                     </h2>
                 </div>
                 <div>
-                    <Carousel
+                    <div>
+                        
+                    </div>
+                    {/* <Carousel
                         showStatus={false}
                         infiniteLoop={true}
                         showThumbs={false}
                     >
                         <div>img1</div>
                         <div>img2</div>
-                    </Carousel>
+                    </Carousel> */}
                 </div>
             </Frame>
         </Wall>

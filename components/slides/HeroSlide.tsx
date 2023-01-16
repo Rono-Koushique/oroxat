@@ -8,7 +8,7 @@ interface Props {
 
 export default function HeroSlide({ imgSrc, title }: Props) {
     return (
-        <div className="h-full w-full relative">
+        <div className="h-[82vh] w-full relative">
             <Image
                 className="h-full w-full object-cover"
                 src={imgSrc}
