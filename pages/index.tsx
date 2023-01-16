@@ -5,6 +5,8 @@ import Hero from "@/components/sections/Hero";
 import HomeIntro from "@/components/sections/HomeIntro";
 import HomeSteps from "@/components/sections/HomeSteps";
 import HomeReviews from "@/components/sections/HomeReviews";
+import HomeTell from "@/components/sections/HomeTell";
+import HomeNews from "@/components/sections/HomeNews";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +23,11 @@ export default function Home() {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
             <Layout1>
                 <section>
                     <Hero />
                 </section>
-                {/* introduction */}
                 <section>
                     <HomeIntro />
                 </section>
@@ -36,6 +36,12 @@ export default function Home() {
                 </section>
                 <section>
                     <HomeReviews />
+                </section>
+                <section>
+                    <HomeTell />
+                </section>
+                <section>
+                    <HomeNews />
                 </section>
             </Layout1>
         </>

@@ -1,12 +1,27 @@
 import React from "react";
 import Wall from "../containers/Wall";
 import Frame from "../containers/Frame";
+import ReviewImage1 from "public/images/review-1.png";
+import ReviewImage2 from "public/images/review-2.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from "next/image";
+import { Icon } from "@iconify/react";
+import ReviewSlide from "../slides/ReviewSlide";
 
 type Props = {};
 
 export default function HomeReviews({}: Props) {
+    const [currentImageIndex, setCurrentImageIndex] = React.useState<number>(0);
+
+    function next() {
+        setCurrentImageIndex((prev) => (prev == 1 ? 1 : prev + 1));
+    }
+
+    function previous() {
+        setCurrentImageIndex((prev) => (prev == 0 ? 0 : prev - 1));
+    }
+
     return (
         <Wall>
             <Frame className="max-w-6xl mx-auto px-12 py-20">
@@ -18,18 +33,48 @@ export default function HomeReviews({}: Props) {
                         Patients and specialists share their experiences
                     </h2>
                 </div>
-                <div>
-                    <div>
-                        
-                    </div>
-                    {/* <Carousel
+                <div className="mt-12 relative">
+                    <button
+                        onClick={() => previous()}
+                        className="cursor-pointer"
+                    >
+                        <Icon
+                            className={`text-6xl absolute z-30 top-1/2 -translate-y-20
+                                ${
+                                    currentImageIndex == 0
+                                        ? "text-neutral-300"
+                                        : "text-neutral-700"
+                                }`}
+                            icon="carbon:chevron-left"
+                        />
+                    </button>
+                    <button onClick={() => next()} className="cursor-pointer">
+                        <Icon
+                            className={`text-6xl absolute z-30 top-1/2 right-0 -translate-y-20
+                                    ${
+                                        currentImageIndex == 1
+                                            ? "text-neutral-300"
+                                            : "text-neutral-700"
+                                    }`}
+                            icon="carbon:chevron-right"
+                        />
+                    </button>
+                    <Carousel
+                        selectedItem={currentImageIndex}
                         showStatus={false}
                         infiniteLoop={true}
                         showThumbs={false}
+                        showArrows={false}
                     >
-                        <div>img1</div>
-                        <div>img2</div>
-                    </Carousel> */}
+                        <ReviewSlide
+                            imgSrc={ReviewImage1}
+                            title="Professor Anjon Banerjee on kidney diseases"
+                        />
+                        <ReviewSlide
+                            imgSrc={ReviewImage2}
+                            title="Professor Tamannah Hossain interview"
+                        />
+                    </Carousel>
                 </div>
             </Frame>
         </Wall>
