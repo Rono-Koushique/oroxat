@@ -4,6 +4,7 @@ import Layout1 from "@/components/layouts/Layout1";
 import Hero from "@/components/sections/Hero";
 import HomeIntro from "@/components/sections/HomeIntro";
 import HomeSteps from "@/components/sections/HomeSteps";
+import HomeReviews from "@/components/sections/HomeReviews";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,9 @@ export default function Home() {
                 </section>
                 <section>
                     <HomeSteps />
+                </section>
+                <section>
+                    <HomeReviews />
                 </section>
             </Layout1>
         </>

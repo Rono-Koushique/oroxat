@@ -4,7 +4,6 @@ import HeroImg2 from "public/images/hero-2.png";
 import HeroImg3 from "public/images/hero-3.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image from "next/image";
 import HeroSlide from "../slides/HeroSlide";
 
 type Props = {};
@@ -32,7 +31,7 @@ export default function Hero({}: Props) {
                 />
                 <HeroSlide
                     imgSrc={HeroImg3}
-                    title="A first-in-class HIF-PH inhibitor2 that mimics the body’s natural response to hypoxia3"
+                    title="A first-in-class HIF-PH inhibitor2 that mimics the body’s natural response to hypoxia"
                 />
             </Carousel>
         </div>

@@ -8,8 +8,8 @@ const allLinks = [
         href: '/challange'
     },
     {
-        title: 'introducing evrenzo',
-        href: '/evrenzo'
+        title: 'introducing oroxat',
+        href: '/oroxat'
     },
     {
         title: 'see the evidence',
@@ -20,8 +20,8 @@ const allLinks = [
         href: '/safety-profile'
     },
     {
-        title: 'how to use evrenzo',
-        href: '/how-to-use-evrenzo'
+        title: 'how to use oroxat',
+        href: '/how-to-use-oroxat'
     },
     {
         title: 'patient perspective',
