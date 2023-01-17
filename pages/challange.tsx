@@ -167,7 +167,7 @@ export default function Challange({}: Props) {
                                         Treatment Challanges
                                     </h1>
                                     <h2 className="body-h2">
-                                        A specialist's view
+                                        A specialist&apos;s view
                                     </h2>
                                     <ReviewSlide
                                         imgSrc={ReviewImage1}
