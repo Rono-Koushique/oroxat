@@ -1,16 +1,20 @@
 import React from "react";
-import ReviewImage1 from "public/images/review-1.png";
 import Image, { StaticImageData } from "next/image";
 import { Icon } from "@iconify/react";
 
 type Props = {
     imgSrc: StaticImageData;
     title: string;
+    className?: string;
 };
 
-export default function ReviewSlide({ imgSrc, title }: Props) {
+export default function ReviewSlide({ imgSrc, title, className }: Props) {
     return (
-        <div className="w-full px-24 flex flex-col pb-20">
+        <div
+            className={`w-full px-24 flex flex-col pb-20 ${
+                className ? className : ""
+            }`}
+        >
             <div className="h-[28rem] w-full relative">
                 <Image
                     className="h-[28rem] w-full object-cover"

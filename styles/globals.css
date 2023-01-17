@@ -1,9 +1,29 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer components {
     .footer-link {
-        @apply px-2
+        @apply px-2;
+    }
+
+    .body-h1 {
+        @apply text-3xl font-semibold text-fuchsia-700 mb-8;
+    }
+
+    .body-h2 {
+        @apply text-xl font-medium text-neutral-600 mb-4;
+    }
+
+    .body-p {
+        @apply text-neutral-700 leading-relaxed mb-4;
+    }
+
+    .body-caption {
+        @apply text-neutral-500 text-sm text-center;
+    }
+
+    .body-ul {
+        @apply text-neutral-700 leading-relaxed mb-4 list-disc list-inside;
     }
 }
