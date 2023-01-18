@@ -21,7 +21,9 @@ export default function SideNav({
 }: Props) {
     return (
         <nav
-            className={`sticky top-2 self-start ${className ? className : ""}`}
+            className={`hidden lg:block col-span-3 sticky top-2 self-start w-full ${
+                className ? className : ""
+            }`}
         >
             <h2 className="text-2xl text-neutral-500 font-semibold">{title}</h2>
             <ol className="flex flex-col gap-y-1 mt-4">
@@ -31,7 +33,8 @@ export default function SideNav({
                             <Link href={sidebarLink.href}>
                                 <div
                                     className={`w-full px-6 py-8 border border-fuchsia-100 hover:bg-fuchsia-50 ${
-                                        activeSection === sidebarLink.href.slice(1)
+                                        activeSection ===
+                                        sidebarLink.href.slice(1)
                                             ? "bg-fuchsia-100"
                                             : ""
                                     }`}

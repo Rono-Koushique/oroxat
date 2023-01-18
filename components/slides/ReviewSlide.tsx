@@ -5,15 +5,21 @@ import { Icon } from "@iconify/react";
 type Props = {
     imgSrc: StaticImageData;
     title: string;
+    asSlide?: boolean;
     className?: string;
 };
 
-export default function ReviewSlide({ imgSrc, title, className }: Props) {
+export default function ReviewSlide({
+    imgSrc,
+    title,
+    asSlide = true,
+    className,
+}: Props) {
     return (
         <div
-            className={`w-full flex flex-col px-0 py-0 lg:px-24 lg:pb-20 ${
-                className ? className : ""
-            }`}
+            className={`w-full flex flex-col ${
+                asSlide ? "px-0 py-0 lg:px-24 lg:pb-20" : ""
+            } ${className ? className : ""}`}
         >
             <div className="h-fit w-full relative">
                 <Image

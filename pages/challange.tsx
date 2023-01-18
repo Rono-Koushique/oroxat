@@ -60,17 +60,27 @@ export default function Challange({}: Props) {
                     content="width=device-width, initial-scale=1"
                 />
             </Head>
+            {/* <Waypoint
+                onEnter={() => setActiveSection("understanding-anaemia-of-ckd")}
+            ></Waypoint> */}
             <Layout1>
                 <BreadCrumb pageLinks={pageLinks} />
                 <Wall>
-                    <Frame className="max-w-6xl mx-auto px-12 flex gap-x-8 ">
+                    <Waypoint
+                        onEnter={() =>
+                            setActiveSection("understanding-anaemia-of-ckd")
+                        }
+                    />
+                    <Frame
+                        className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-9 gap-x-8 px-8 pt-4 pb-16
+                            lg:px-12 lg:pb-20"
+                    >
                         <SideNav
-                            className="w-[28rem] mb-32"
                             title="The Challange"
                             sidebarLinks={sectionLinks}
                             activeSection={activeSection}
                         />
-                        <Frame className="w-full flex flex-col gap-y-16 mb-32">
+                        <Frame className="lg:col-span-6 w-full flex flex-col h-fit gap-y-16">
                             <Waypoint
                                 onEnter={() =>
                                     setActiveSection(
@@ -106,7 +116,7 @@ export default function Challange({}: Props) {
                                         of factors, including:
                                     </p>
                                     <br />
-                                    <div className="grid grid-cols-4 gap-x-4">
+                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                                         <BodyImage
                                             imgSrc={kidney}
                                             caption="Reduced oxygen sensing in the kidney"
@@ -172,7 +182,7 @@ export default function Challange({}: Props) {
                                     <ReviewSlide
                                         imgSrc={ReviewImage1}
                                         title="Professor Anjon Banerjee on kidney diseases"
-                                        className="px-0 pb-0"
+                                        asSlide={false}
                                     />
                                     <br />
                                     <p className="body-p">
@@ -269,9 +279,9 @@ export default function Challange({}: Props) {
                                             <span className="underline text-fuchsia-700">
                                                 www.mhra.gov.uk/yellowcard
                                             </span>
-                                            or search for MHRA Yellow Card in
-                                            the Google Play or Apple App Store.
-                                            Adverse events should also be
+                                            &nbsp; or search for MHRA Yellow
+                                            Card in the Google Play or Apple App
+                                            Store. Adverse events should also be
                                             reported to SKF Pharma Ltd. on 0800
                                             783 5018
                                         </p>
