@@ -5,7 +5,6 @@ import ReviewImage1 from "public/images/review-1.png";
 import ReviewImage2 from "public/images/review-2.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image from "next/image";
 import { Icon } from "@iconify/react";
 import ReviewSlide from "../slides/ReviewSlide";
 
@@ -24,22 +23,23 @@ export default function HomeReviews({}: Props) {
 
     return (
         <Wall>
-            <Frame className="max-w-6xl mx-auto px-12 py-20">
+            <Frame className="max-w-6xl mx-auto flex flex-col gap-4 md:gap-12 px-8 py-16
+                            lg:px-12 lg:py-20">
                 <div>
-                    <h2 className="text-3xl text-fuchsia-700 font-semibold w-1/2">
+                    <h2 className="text-3xl text-fuchsia-700 font-semibold w-full lg:w-1/2">
                         See for yourself
                     </h2>
-                    <h2 className="text-2xl text-neutral-500 font-semibold mt-1">
+                    <h2 className="text-xl md:text-2xl text-neutral-500 font-semibold mt-1">
                         Patients and specialists share their experiences
                     </h2>
                 </div>
-                <div className="mt-12 relative">
+                <div className="relative">
                     <button
                         onClick={() => previous()}
                         className="cursor-pointer"
                     >
                         <Icon
-                            className={`text-6xl absolute z-30 top-1/2 -translate-y-20
+                            className={`text-6xl absolute z-30 top-[8rem] md:top-[14rem] left-0
                                 ${
                                     currentImageIndex == 0
                                         ? "text-neutral-300"
@@ -50,7 +50,7 @@ export default function HomeReviews({}: Props) {
                     </button>
                     <button onClick={() => next()} className="cursor-pointer">
                         <Icon
-                            className={`text-6xl absolute z-30 top-1/2 right-0 -translate-y-20
+                            className={`text-6xl absolute z-30 top-[8rem] md:top-[14rem] right-0
                                     ${
                                         currentImageIndex == 1
                                             ? "text-neutral-300"
@@ -65,6 +65,7 @@ export default function HomeReviews({}: Props) {
                         infiniteLoop={true}
                         showThumbs={false}
                         showArrows={false}
+                        swipeable={false}
                     >
                         <ReviewSlide
                             imgSrc={ReviewImage1}

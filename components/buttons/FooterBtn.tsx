@@ -9,7 +9,7 @@ type Props = {
 export default function FooterBtn({ children, onClick, className }: Props) {
     return (
         <button
-            className={`uppercase bg-fuchsia-900 font-medium text-sm text-white px-6 py-4 ${
+            className={`uppercase bg-fuchsia-900 font-medium text-sm text-white px-4 py-6 md:px-6 ${
                 className ? className : ""
             }`}
             onClick={() => onClick()}

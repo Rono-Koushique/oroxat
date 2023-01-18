@@ -7,6 +7,7 @@ import HomeSteps from "@/components/sections/HomeSteps";
 import HomeReviews from "@/components/sections/HomeReviews";
 import HomeTell from "@/components/sections/HomeTell";
 import HomeNews from "@/components/sections/HomeNews";
+import Size from "@/components/extras/Size";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +45,7 @@ export default function Home() {
                     <HomeNews />
                 </section>
             </Layout1>
+            <Size />
         </>
     );
 }

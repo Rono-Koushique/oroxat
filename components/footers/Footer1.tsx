@@ -12,7 +12,9 @@ export default function Footer1({}: Props) {
     return (
         <footer>
             <Wall className="bg-fuchsia-700">
-                <Frame className="max-w-6xl mx-auto flex items-center justify-between px-12 py-20">
+                <Frame className="max-w-6xl mx-auto flex flex-col items-center gap-4 justify-between px-8 py-16
+                            md:flex-row
+                            lg:px-12 lg:py-20">
                     {/* description */}
                     <div className="flex flex-col gap-y-3 text-neutral-100 text-sm">
                         <Image
@@ -33,7 +35,7 @@ export default function Footer1({}: Props) {
                     </div>
 
                     {/* footer button section */}
-                    <div className="flex flex-col gap-y-2">
+                    <div className="flex flex-col gap-y-2 w-full md:w-fit">
                         <FooterBtn
                             onClick={() => console.log("footer button pressed")}
                         >
@@ -47,13 +49,13 @@ export default function Footer1({}: Props) {
                     </div>
                 </Frame>
             </Wall>
-            <Wall className="bg-fuchsia-">
-                <Frame className="max-w-6xl mx-auto px-12 py-6 flex items-center justify-between 
-                            text-fuchsia-900 text-xs tracking-wide font-semibold">
+            <Wall className="bg-gray-700">
+                <Frame className="max-w-6xl mx-auto px-12 py-6 flex items-center justify-center md:justify-between 
+                            text-neutral-100 text-xs tracking-wide font-semibold">
                     <div className="uppercase tracking-wider">
                         <Link href='/'>update cookie preferences</Link>
                     </div>
-                    <div className="capitalize flex items-center divide-x divide-fuchsia-900">
+                    <div className="capitalize hidden md:flex items-center divide-x divide-neutral-100">
                         <Link className="pr-2" href='/'>privacy notice</Link>
                         <Link className="footer-link" href='/'>terms of use</Link>
                         <Link className="footer-link" href='/'>contact us</Link>

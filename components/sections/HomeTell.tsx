@@ -10,16 +10,23 @@ type Props = {};
 export default function HomeTell({}: Props) {
     return (
         <Wall>
-            <Frame className="relative w-full flex justify-center py-20">
+            <Frame
+                className="relative w-full flex justify-center px-8 py-16 
+                            lg:px-12 lg:py-20"
+            >
                 <Image
                     className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
                     src={Wallpaper}
                     alt=""
                 />
-                <div className="flex flex-col items-center bg-white w-fit text-3xl 
-                            font-semibold px-16 py-8 gap-y-3 text-fuchsia-700">
-                    <h2>Tell me more</h2>
-                    <FooterBtn onClick={()=>console.log('tell me')}>
+                <div className="flex flex-col items-center bg-white w-fit p-8 md:px-16 lg:py-8 gap-y-3 rounded-md">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-fuchsia-700">
+                        Tell me more
+                    </h2>
+                    <FooterBtn
+                        className="w-full rounded"
+                        onClick={() => console.log("tell me")}
+                    >
                         Request Further Information
                     </FooterBtn>
                 </div>

@@ -15,16 +15,18 @@ type Props = {};
 export default function HomeSteps({}: Props) {
     return (
         <Wall className="bg-gray-700">
-            <Frame className="max-w-6xl mx-auto px-12 py-20">
+            <Frame className="max-w-6xl mx-auto px-8 py-16 
+                        lg:px-12 lg:py-20">
                 {/* heading  */}
                 <div>
-                    <h2 className="text-3xl text-gray-100 font-semibold w-1/2">
+                    <h2 className="text-3xl text-gray-100 font-semibold w-full 
+                            md:w-1/2">
                         Where are you in your journey to explore OROXAT ?
                     </h2>
                 </div>
 
                 {/* steps section */}
-                <div className="grid grid-cols-3 gap-4 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
                     <StepCard src={StepImage1} text="Assess the Challenge"/>
                     <StepCard src={StepImage2} text="Discover Oroxat"/>
                     <StepCard src={StepImage3} text="View The Evidence"/>

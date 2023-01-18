@@ -14,7 +14,7 @@ export default function Hero({}: Props) {
     const images = [HeroImg1, HeroImg2, HeroImg3];
     return (
         <Wall>
-            <Frame className="h-[82vh] w-full">
+            <Frame className="h-fit lg:h-[82vh] w-full">
                 {/* <HeroSlide
                     imgSrc={HeroImg2}
                     title="For adult patients with symptomatic anaemia of chronic kidney disease (CKD), OROXAT is like a breath of fresh air, at high altitude"

@@ -11,13 +11,13 @@ type Props = {
 export default function ReviewSlide({ imgSrc, title, className }: Props) {
     return (
         <div
-            className={`w-full px-24 flex flex-col pb-20 ${
+            className={`w-full flex flex-col px-0 py-0 lg:px-24 lg:pb-20 ${
                 className ? className : ""
             }`}
         >
-            <div className="h-[28rem] w-full relative">
+            <div className="h-fit w-full relative">
                 <Image
-                    className="h-[28rem] w-full object-cover"
+                    className="h-[16rem] md:h-[28rem] w-full object-cover"
                     src={imgSrc}
                     alt=""
                 />
@@ -32,8 +32,8 @@ export default function ReviewSlide({ imgSrc, title, className }: Props) {
                 </div>
             </div>
             <div
-                className="w-full h-16 bg-neutral-700 flex items-center justify-center
-                                    font-semibold text-neutral-100 text-lg"
+                className="w-full h-fit bg-neutral-700 flex items-center justify-center
+                        font-semibold text-neutral-100 text-lg py-2 px-4 md:py-4"
             >
                 {title}
             </div>

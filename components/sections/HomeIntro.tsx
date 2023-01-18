@@ -9,7 +9,8 @@ type Props = {};
 export default function HomeIntro({}: Props) {
     return (
         <Wall>
-            <Frame className="max-w-6xl mx-auto px-12 py-20 flex items-center justify-between gap-x-12">
+            <Frame className="max-w-6xl mx-auto flex flex-col items-center justify-between gap-12 px-8 py-16
+                            md:flex-row lg:px-12 lg:py-20">
                 {/* text section */}
                 <div>
                     <h2 className="text-3xl text-fuchsia-700 font-semibold">
@@ -32,7 +33,7 @@ export default function HomeIntro({}: Props) {
                         the difference OROXAT can make to your patients.
                     </p>
 
-                    <ul className="text-sm text-gray-500 mt-8 leading-snug">
+                    <ul className="text-sm text-gray-500 mt-8 leading-relaxed">
                         <li>1. OROXAT SmPC</li>
                         <li>
                             2. Sanghani NS, Haase VH. Adv Chronic Kidney Dis.
@@ -46,7 +47,7 @@ export default function HomeIntro({}: Props) {
                 </div>
 
                 {/* card */}
-                <div className="flex flex-col items-center px-5 py-7 rounded-2xl shadow-2xl min-w-[16rem]">
+                <div className="flex flex-col items-center px-5 py-7 rounded-2xl shadow-2xl min-w-[16rem] w-full">
                     <Image 
                         className="w-24"
                         src={CompassImage}
