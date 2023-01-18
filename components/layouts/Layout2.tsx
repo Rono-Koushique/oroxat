@@ -20,17 +20,18 @@ type Props = {
     sectionLinks: SectionLink[];
     sidebarTitle: string;
     children: React.ReactNode | React.ReactNode[];
+    activeSection: string;
+    setActiveSection: Function;
 };
 
 export default function Layout2({
     pageLinks,
     sectionLinks,
     sidebarTitle,
-    children
+    children,
+    activeSection,
+    setActiveSection
 }: Props) {
-    const [activeSection, setActiveSection] = React.useState<string>(
-        sectionLinks[0].href.slice(1)
-    );
     return (
         <>
             <BreadCrumb pageLinks={pageLinks} />
@@ -40,16 +41,13 @@ export default function Layout2({
                         setActiveSection(sectionLinks[0].href.slice(1))
                     }
                 />
-                <Frame
-                    className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-9 gap-x-8 px-8 pt-4 pb-16
-                            lg:px-12 lg:pb-20"
-                >
+                <Frame className="grid max-w-6xl grid-cols-1 px-8 pt-4 pb-16 mx-auto lg:grid-cols-9 gap-x-8 lg:px-12 lg:pb-20">
                     <SideNav
                         title={sidebarTitle}
                         sidebarLinks={sectionLinks}
                         activeSection={activeSection}
                     />
-                    <Frame className="lg:col-span-6 w-full flex flex-col h-fit gap-y-16">
+                    <Frame className="flex flex-col w-full lg:col-span-6 h-fit gap-y-16">
                         {children}
                     </Frame>
                 </Frame>

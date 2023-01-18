@@ -28,7 +28,7 @@ export default function Footer1({}: Props) {
                         </p>
                         <p>© 2023 SKF Pharma Ltd.</p>
                         <p>
-                            <span>oroxat</span>, Astellas logo are registerd
+                            <span>oroxat</span> logo is registerd
                             trademarks of SKF Pharma Ltd.
                         </p>
                         <p>Date of preparation: January 2023</p>

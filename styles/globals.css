@@ -21,7 +21,11 @@
     }
 
     .body-h2 {
-        @apply text-xl font-medium text-neutral-600 mb-4;
+        @apply text-2xl font-medium text-neutral-600 mb-4;
+    }
+
+    .body-h3 {
+        @apply text-xl font-medium text-neutral-500 mb-4;
     }
 
     .body-p {
@@ -33,10 +37,10 @@
     }
 
     .body-ul {
-        @apply text-neutral-700 leading-relaxed mb-4 list-disc list-inside;
+        @apply text-neutral-700 leading-relaxed mb-8 list-disc ml-5;
     }
 
     .body-img {
-        @apply mb-4
+        @apply my-8
     }
 }
