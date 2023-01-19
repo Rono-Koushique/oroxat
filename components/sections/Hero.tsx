@@ -27,6 +27,7 @@ export default function Hero({}: Props) {
                     infiniteLoop={true}
                     showThumbs={false}
                     autoFocus={true}
+                    swipeable={false}
                 >
                     <HeroSlide
                         imgSrc={HeroImg1}

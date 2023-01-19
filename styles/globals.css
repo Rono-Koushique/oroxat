@@ -3,6 +3,9 @@
 @import "tailwindcss/utilities";
 
 @layer base {
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
     body {
         width: 100%;
         margin: 0;
@@ -17,7 +20,7 @@
     }
 
     .m-def {
-        @apply m-0
+        @apply m-0;
     }
 
     .content h1 {
@@ -49,18 +52,18 @@
     }
 
     .content ul {
-        @apply list-disc pl-4 text-gray-500 mb-4
+        @apply list-disc pl-4 text-gray-500 mb-4;
     }
 
     .content img.image {
-        @apply my-6
+        @apply my-6;
     }
 
     .content .holder {
-        @apply my-6
+        @apply my-6;
     }
 
     .content .slide {
-        @apply my-6
+        @apply my-6;
     }
 }

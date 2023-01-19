@@ -331,7 +331,7 @@ export default function Oroxat({}: Props) {
                                 and further information on CV and mortality
                                 risk.
                             </p>
-                            <div className="w-[20rem] flex flex-col gap-2">
+                            <div className="lg:w-[20rem] flex flex-col gap-2">
                                 <FooterBtn onClick={() => {}}>
                                     EXAMINE THE EVIDENCE
                                 </FooterBtn>
