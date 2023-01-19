@@ -10,14 +10,14 @@ type Props = {
     title: string;
     sidebarLinks: NavLinks[];
     className?: string;
-    activeSection?: string;
+    currentSection?: string;
 };
 
 export default function SideNav({
     title,
     sidebarLinks,
     className,
-    activeSection,
+    currentSection,
 }: Props) {
     return (
         <nav
@@ -32,14 +32,17 @@ export default function SideNav({
                         <li key={sidebarLink.title}>
                             <Link href={sidebarLink.href}>
                                 <div
-                                    className={`w-full px-6 py-8 border border-fuchsia-100 hover:bg-fuchsia-50 ${
-                                        activeSection ===
-                                        sidebarLink.href.slice(1)
-                                            ? "bg-fuchsia-100"
-                                            : ""
-                                    }`}
+                                    className={`w-full px-6 py-8 border border-fuchsia-100 hover:bg-fuchsia-50
+                                        ${
+                                            currentSection &&
+                                            currentSection ===
+                                                sidebarLink.href.slice(1)
+                                                ? "bg-fuchsia-100"
+                                                : ""
+                                        }
+                                    `}
                                 >
-                                    <p className="font-semibold text-fuchsia-700">
+                                    <p className="font-semibold text-fuchsia-700 text-left">
                                         {sidebarLink.title}
                                     </p>
                                 </div>

@@ -18,12 +18,14 @@ export default function Navbar1({}: Props) {
             <Wall>
                 <Frame className="max-w-6xl mx-auto px-8 lg:px-12 py-4 flex items-center">
                     {/* logo section */}
-                    <Image
-                        className="h-12 w-fit"
-                        src={BrandLogo}
-                        alt="brand-logo"
-                        priority={true}
-                    />
+                    <Link href='/'>
+                        <Image
+                            className="h-12 w-fit cursor-pointer"
+                            src={BrandLogo}
+                            alt="brand-logo"
+                            priority={true}
+                        />
+                    </Link>
 
                     {/* search input */}
                     <div className="hidden md:block ml-auto">
