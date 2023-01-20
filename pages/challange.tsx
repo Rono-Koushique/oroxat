@@ -48,6 +48,7 @@ export default function Challange({}: Props) {
     const [currentSection, setCurrentSection] = React.useState<string>(
         sectionLinks[0].href.slice(1)
     );
+    
     React.useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;

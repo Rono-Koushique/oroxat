@@ -203,7 +203,7 @@ export default function evidence({}: Props) {
                                 className="max-w-6xl mx-auto flex flex-col px-8 py-12
                                         lg:px-12 lg:py-16"
                             >
-                                <AdverseEffect />
+                                <AdverseEffect /> 
                             </Frame>
                         </Wall>
                     </section>
