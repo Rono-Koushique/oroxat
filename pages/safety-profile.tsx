@@ -560,7 +560,7 @@ export default function SafetyProfile({}: Props) {
                                 with symptomatic anaemia associated with NDD-CKD
                                 or IDD-CKD.
                             </p>
-                            <div className="holder">
+                            <div className="holder w-full overflow-x-scroll sm:overflow-auto">
                                 <table className="bordered-table">
                                     <thead>
                                         <tr>
@@ -701,7 +701,7 @@ export default function SafetyProfile({}: Props) {
                                 any comparison of treatment effect estimates
                                 cannot be reliably established.
                             </p>
-                            <div className="holder">
+                            <div className="holder w-full overflow-x-scroll sm:overflow-auto">
                                 <table className="bordered-table">
                                     <thead>
                                         <tr>
