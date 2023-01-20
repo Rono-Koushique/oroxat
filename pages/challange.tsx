@@ -1,8 +1,4 @@
-import Frame from "@/components/containers/Frame";
-import Wall from "@/components/containers/Wall";
-import BreadCrumb from "@/components/extras/BreadCrumb";
 import Layout1 from "@/components/layouts/Layout1";
-import SideNav from "@/components/navbars/SideNav";
 import Head from "next/head";
 import React from "react";
 import oxygen from "public/images/page-challange/oxygen.svg";
@@ -48,7 +44,7 @@ export default function Challange({}: Props) {
     const [currentSection, setCurrentSection] = React.useState<string>(
         sectionLinks[0].href.slice(1)
     );
-    
+
     React.useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
