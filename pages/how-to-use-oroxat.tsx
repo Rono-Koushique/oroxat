@@ -173,7 +173,7 @@ export default function HowToUseOroxat({}: Props) {
               <h3>ESA-naive patients</h3>
               <h3>Patients converting from ESA treatment</h3>
               <ul>
-                <li
+                <li>
                   Patients currently treated with an ESA can be converted to
                   OROXAT. Conversion of dialysis patients otherwise stable on
                   ESA treatment is only to be considered when there is a valid
