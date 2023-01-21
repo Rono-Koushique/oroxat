@@ -19,6 +19,7 @@ export default function SideNav({
     className,
     currentSection,
 }: Props) {
+
     return (
         <nav
             className={`hidden lg:block col-span-3 sticky top-2 self-start w-full ${
@@ -30,7 +31,7 @@ export default function SideNav({
                 {sidebarLinks.map((sidebarLink) => {
                     return (
                         <li key={sidebarLink.title}>
-                            <Link href={sidebarLink.href}>
+                            <Link href={sidebarLink.href} scroll={false}>
                                 <div
                                     className={`w-full px-6 py-8 border border-fuchsia-100 hover:bg-fuchsia-50
                                         ${

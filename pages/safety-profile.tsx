@@ -56,8 +56,8 @@ export default function SafetyProfile({}: Props) {
             sectionLinks.forEach((section) => {
                 const element = document.getElementById(section.href.slice(1));
                 const elementPosition = element?.offsetTop;
-
-                if (elementPosition && scrollPosition >= elementPosition) {
+                
+                if (elementPosition && scrollPosition+100 >= elementPosition) {
                     setCurrentSection(section.href.slice(1));
                 }
             });
