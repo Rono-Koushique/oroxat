@@ -173,7 +173,7 @@ export default function HowToUseOroxat({}: Props) {
               <h3>ESA-naive patients</h3>
               <h3>Patients converting from ESA treatment</h3>
               <ul>
-                <li>
+                <lio
                   Patients currently treated with an ESA can be converted to
                   OROXAT. Conversion of dialysis patients otherwise stable on
                   ESA treatment is only to be considered when there is a valid
@@ -247,7 +247,7 @@ export default function HowToUseOroxat({}: Props) {
               <p>
                 In addition to the presence of symptoms of anaemia, other
                 clinical criteria should be considered in the evaluation of the
-                individual patient's clinical course and condition.
+                individual patient&apos;s clinical course and condition.
               </p>
               <p>Administration – key points</p>
               <ul>
