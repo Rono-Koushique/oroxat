@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 type Props = {
     imgSrc: StaticImageData;
-    title: string;
+    title?: string;
     asSlide?: boolean;
     className?: string;
 };
@@ -37,12 +37,14 @@ export default function ReviewSlide({
                     />
                 </div>
             </div>
-            <div
-                className="w-full h-fit bg-neutral-700 flex items-center justify-center
+            {title && (
+                <div
+                    className="w-full h-fit bg-neutral-700 flex items-center justify-center
                         font-semibold text-neutral-100 text-lg py-2 px-4 md:py-4"
-            >
-                {title}
-            </div>
+                >
+                    {title}
+                </div>
+            )}
         </div>
     );
 }
