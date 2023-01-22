@@ -4,9 +4,10 @@ import { Icon } from "@iconify/react";
 
 type Props = {
     imgSrc: StaticImageData;
-    title: string;
+    title?: string;
     asSlide?: boolean;
     className?: string;
+    imgClassName?: string;
 };
 
 export default function ReviewSlide({
@@ -14,6 +15,7 @@ export default function ReviewSlide({
     title,
     asSlide = true,
     className,
+    imgClassName,
 }: Props) {
     return (
         <div
@@ -23,7 +25,7 @@ export default function ReviewSlide({
         >
             <div className="h-fit w-full relative">
                 <Image
-                    className="h-[16rem] md:h-[28rem] w-full object-cover"
+                    className={`h-[16rem] md:h-[28rem] w-full object-cover ${imgClassName!}`}
                     src={imgSrc}
                     alt=""
                 />
@@ -37,12 +39,14 @@ export default function ReviewSlide({
                     />
                 </div>
             </div>
-            <div
-                className="w-full h-fit bg-neutral-700 flex items-center justify-center
+            {title && (
+                <div
+                    className="w-full h-fit bg-neutral-700 flex items-center justify-center
                         font-semibold text-neutral-100 text-lg py-2 px-4 md:py-4"
-            >
-                {title}
-            </div>
+                >
+                    {title}
+                </div>
+            )}
         </div>
     );
 }

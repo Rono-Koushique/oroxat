@@ -52,7 +52,11 @@
     }
 
     .content ul {
-        @apply list-disc pl-4 text-gray-500 mb-4;
+        @apply list-disc text-gray-500 mb-4;
+    }
+
+    .content ul li {
+        @apply ml-6
     }
 
     .content img.image {
@@ -65,5 +69,37 @@
 
     .content .slide {
         @apply my-6;
+    }
+
+    .content table {
+        @apply border-collapse rounded-t-2xl overflow-hidden cursor-cell;
+    }
+
+    .content table thead tr {
+        @apply bg-fuchsia-700;
+    }
+
+    .content table tbody tr {
+        @apply border-b border-gray-300;
+    }
+
+    .content table th {
+        @apply align-top text-gray-100 px-3 py-2 !font-semibold text-sm;
+    }
+
+    .content table td {
+        @apply text-gray-700 px-3 py-2 text-sm;
+    }
+
+    .content .bordered-table {
+        @apply w-full
+    }
+
+    .content .bordered-table td {
+        @apply border border-gray-300 text-center
+    }
+
+    .content .bordered-table th {
+        @apply border
     }
 }
