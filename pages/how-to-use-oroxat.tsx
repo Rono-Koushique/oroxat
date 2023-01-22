@@ -177,6 +177,26 @@ export default function HowToUseOroxat({}: Props) {
                                 anaemia associated with CKD
                             </h1>
                             <h3>ESA-naive patients</h3>
+                            <div className="holder">
+                                <table className="w-full">
+                                    <thead className="text-left">
+                                        <tr>
+                                            <th>Body weight</th>
+                                            <th>EVRENZO dosage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>&lt;100 kg</td>
+                                            <td>70 mg, 3x per week</td>
+                                        </tr>
+                                        <tr>
+                                            <td>≥100 kg</td>
+                                            <td>100 mg, 3x per week</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <h3>Patients converting from ESA treatment</h3>
                             <ul>
                                 <li>
@@ -201,6 +221,62 @@ export default function HowToUseOroxat({}: Props) {
                                     scheduled dose of the current ESA.
                                 </li>
                             </ul>
+                            <div className="holder">
+                                <table>
+                                    <thead className="text-left">
+                                        <tr>
+                                            <th>
+                                                Darbepoetin-alfa IV or SC dose
+                                                (micrograms/week)
+                                            </th>
+                                            <th>
+                                                Epoetin IV or SC dose (IU/week)
+                                            </th>
+                                            <th>
+                                                Methoxy polyethylene
+                                                glycol-epoetin beta IV or SC
+                                                dose (micrograms/monthly)
+                                            </th>
+                                            <th>
+                                                EVRENZO dose (milligrams three
+                                                times per week)
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Less than 25</td>
+                                            <td>Less than 5,000</td>
+                                            <td>Less than 80</td>
+                                            <td>70</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25 to less than 40</td>
+                                            <td>5,000 up to 8,000</td>
+                                            <td>80 up to and including 120</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>40 up to and including 80</td>
+                                            <td>
+                                                More than 8,000 up to and
+                                                including 16,000
+                                            </td>
+                                            <td>
+                                                More than 120 up to and
+                                                including 200
+                                            </td>
+                                            <td>150</td>
+                                        </tr>
+                                        <tr>
+                                            <td>More than 80</td>
+                                            <td>More than 16,000</td>
+                                            <td>More than 200</td>
+                                            <td>200</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <h3>
                                 Initial Hb monitoring requirements for OROXAT
                                 are similar to other treatments for adult
@@ -215,7 +291,7 @@ export default function HowToUseOroxat({}: Props) {
                                     thereafter, or as clinically indicated
                                 </li>
                             </ul>
-                            <p>
+                            <p className="fade">
                                 CKD, chronic kidney disease; ESA,
                                 erythropoiesis-stimulating agent; Hb,
                                 haemoglobin; IU, international units; IV,
@@ -228,11 +304,10 @@ export default function HowToUseOroxat({}: Props) {
                         >
                             <h1>Starting patients on OROXAT</h1>
                             <h3>Which patients will you consider first?</h3>
-                            <div className="flex flex-row gap-6">
+                            <div className="flex flex-row gap-6 holder">
                                 <div className="flex flex-col gap-y-0">
                                     <p>Patients not on dialysis?</p>
                                     <Image
-                                        className="image"
                                         src={Use4}
                                         alt=""
                                     />
@@ -240,7 +315,6 @@ export default function HowToUseOroxat({}: Props) {
                                 <div className="flex flex-col gap-y-0">
                                     <p>Patients new to dialysis?</p>
                                     <Image
-                                        className="image"
                                         src={Use5}
                                         alt=""
                                     />
@@ -258,7 +332,7 @@ export default function HowToUseOroxat({}: Props) {
                                 In addition to the presence of symptoms of
                                 anaemia, other clinical criteria should be
                                 considered in the evaluation of the individual
-                                patient's clinical course and condition.
+                                patient&apos;s clinical course and condition.
                             </p>
                             <p>Administration – key points</p>
                             <ul>
@@ -299,7 +373,7 @@ export default function HowToUseOroxat({}: Props) {
                                 September 2022
                             </p>
                         </section>
-                        <AdverseEffect></AdverseEffect>
+                        <AdverseEffect />
                     </div>
                 </Layout2>
             </Layout1>
