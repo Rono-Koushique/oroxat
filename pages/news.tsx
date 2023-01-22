@@ -25,7 +25,7 @@ const nddInfo = [
 },
 {
     src: Ndd3,
-    text: "Oroxat's Hb results similar to ESA",
+    text: "Oroxat&apos;s Hb results similar to ESA",
 },
 {
     src: Ndd4,
@@ -89,7 +89,7 @@ return (
                 <section id="result" className="mt-6">
                     <Wall>
                         <Frame className="max-w-6xl mx-auto flex flex-col px-8 lg:px-12">
-                            <h1>What's on the Horizon?</h1>
+                            <h1>What&apos;s on the Horizon?</h1>
                             <p>
                                 If you are interested in keeping up to date
                                 with our latest live and on demand webinars,
