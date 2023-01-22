@@ -7,6 +7,7 @@ type Props = {
     title?: string;
     asSlide?: boolean;
     className?: string;
+    imgClassName?: string;
 };
 
 export default function ReviewSlide({
@@ -14,6 +15,7 @@ export default function ReviewSlide({
     title,
     asSlide = true,
     className,
+    imgClassName,
 }: Props) {
     return (
         <div
@@ -23,7 +25,7 @@ export default function ReviewSlide({
         >
             <div className="h-fit w-full relative">
                 <Image
-                    className="h-[16rem] md:h-[28rem] w-full object-cover"
+                    className={`h-[16rem] md:h-[28rem] w-full object-cover ${imgClassName!}`}
                     src={imgSrc}
                     alt=""
                 />
