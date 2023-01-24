@@ -10,7 +10,7 @@ export default function AdverseEffect({ className }: Props) {
             <h4>
                 Reporting Adverse Events
             </h4>
-            <p>
+            <p className="!mb-0">
                 Adverse events should be reported. Reporting forms and
                 information can be found at{" "}
                 <span className="underline text-fuchsia-700">

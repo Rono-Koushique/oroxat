@@ -31,7 +31,8 @@ export default function ReviewSlide({
                 />
                 <div
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                        text-4xl rounded-full bg-white p-4 cursor-pointer"
+                        text-4xl rounded-full bg-white p-4 cursor-pointer 
+                        hover:scale-110 transition duration-300 ease-in-out"
                 >
                     <Icon
                         className="text-fuchsia-700"

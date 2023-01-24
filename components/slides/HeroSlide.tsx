@@ -20,8 +20,8 @@ export default function HeroSlide({ imgSrc, title }: Props) {
                         flex flex-col justify-between -translate-x-1/2 px-8 py-12 
                         lg:px-12 lg:py-20"
             >
-                <h1 className="text-xl text-white w-3/4 text-left font-semibold
-                            md:text-2xl lg:text-3xl lg:w-1/2">
+                <h1 className="text-xl text-white w-3/4 text-left font-semibold 
+                            md:text-2xl md:leading-relaxed lg:text-3xl lg:w-1/2">
                     {title}
                 </h1>
                 <h2
