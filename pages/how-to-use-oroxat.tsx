@@ -182,7 +182,7 @@ export default function HowToUseOroxat({}: Props) {
                                     <thead className="text-left">
                                         <tr>
                                             <th>Body weight</th>
-                                            <th>EVRENZO dosage</th>
+                                            <th>OROXAT dosage</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -238,7 +238,7 @@ export default function HowToUseOroxat({}: Props) {
                                                 dose (micrograms/monthly)
                                             </th>
                                             <th>
-                                                EVRENZO dose (milligrams three
+                                                OROXAT dose (milligrams three
                                                 times per week)
                                             </th>
                                         </tr>
