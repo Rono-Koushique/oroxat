@@ -99,7 +99,7 @@ export default function SafetyProfile({}: Props) {
                             className="flex flex-col"
                         >
                             <h1>
-                                The safety profile of EVRENZO has been evaluated
+                                The safety profile of OROXAT has been evaluated
                                 in an extensive range of clinical studies
                             </h1>
                             <p>
@@ -281,7 +281,7 @@ export default function SafetyProfile({}: Props) {
                             </p>
                             <p>
                                 In the case of non-responsiveness, treatment
-                                with EVRENZO should not be continued beyond 24
+                                with OROXAT should not be continued beyond 24
                                 weeks after the start of treatment (see SmPC
                                 section 4.2).
                             </p>
@@ -292,7 +292,7 @@ export default function SafetyProfile({}: Props) {
                                 section 4.2). Conversion of stable ESA treated
                                 patients with anaemia associated with CKD and
                                 not on dialysis was not studied. A decision to
-                                treat these patients with EVRENZO should be
+                                treat these patients with OROXAT should be
                                 based on a benefit risk consideration for the
                                 individual patient.
                             </p>
@@ -306,7 +306,7 @@ export default function SafetyProfile({}: Props) {
                                 The reported risk of thrombotic vascular events
                                 (TVE) should be carefully weighed against the
                                 benefits to be derived from treatment with
-                                EVRENZO, particularly in patients with
+                                OROXAT, particularly in patients with
                                 pre-existing risk factors for TVE, including
                                 obesity and prior history of TVEs (e.g. deep
                                 vein thrombosis [DVT] and pulmonary embolism
@@ -323,7 +323,7 @@ export default function SafetyProfile({}: Props) {
                             </p>
                             <p>
                                 In patients with DD-CKD, rates of VAT in
-                                EVRENZO-treated patients were highest in the
+                                OROXAT-treated patients were highest in the
                                 first 12 weeks following initiation of
                                 treatment, at Hb values more than 12 g/dL and in
                                 the setting of a Hb rise of more than 2 g/dL
@@ -344,8 +344,8 @@ export default function SafetyProfile({}: Props) {
                             <h4>Seizures</h4>
                             <p>
                                 Seizures were reported as common amongst the
-                                patients in clinical studies receiving EVRENZO
-                                (see SmPC section 4.8). EVRENZO should be used
+                                patients in clinical studies receiving OROXAT
+                                (see SmPC section 4.8). OROXAT should be used
                                 with caution in patients with a history of
                                 seizures (convulsions or fits), epilepsy or
                                 medical conditions associated with a
@@ -383,7 +383,7 @@ export default function SafetyProfile({}: Props) {
                             </p>
                             <h4>Inadequate response to therapy</h4>
                             <p>
-                                Inadequate response to therapy with EVRENZO
+                                Inadequate response to therapy with OROXAT
                                 should prompt a search for causative factors.
                                 Nutrient deficiencies should be corrected.
                                 lntercurrent infections, occult blood loss,
@@ -396,32 +396,32 @@ export default function SafetyProfile({}: Props) {
                                 patient has reticulocytopenia, an examination of
                                 the bone marrow should be considered. In the
                                 absence of an addressable cause for an
-                                inadequate response to therapy, EVRENZO should
+                                inadequate response to therapy, OROXAT should
                                 not be continued beyond 24 weeks of therapy.
                             </p>
                             <h4>Hepatic impairment</h4>
                             <p>
-                                Caution is warranted when EVRENZO is
+                                Caution is warranted when OROXAT is
                                 administered to patients with moderate hepatic
-                                impairment (Child-Pugh class B). EVRENZO is not
+                                impairment (Child-Pugh class B). OROXAT is not
                                 recommended for use in patients with severe
                                 hepatic impairment (Child-Pugh class C) (see
                                 SmPC section 5.2).
                             </p>
                             <h4>Pregnancy and contraception</h4>
                             <p>
-                                EVRENZO should not be initiated in women
+                                OROXAT should not be initiated in women
                                 planning on becoming pregnant, during pregnancy
                                 or when anaemia associated with CKD is diagnosed
                                 during pregnancy. In such cases, alternative
                                 therapy should be started, if appropriate. If
-                                pregnancy occurs while EVRENZO is being
+                                pregnancy occurs while OROXAT is being
                                 administered, treatment should be discontinued
                                 and alternative treatment started, if
                                 appropriate. Women of chiId bearing potential
                                 must use highly effective contraception during
                                 treatment and for at least one week after the
-                                last dose of EVRENZO (see SmPC sections 4.3,
+                                last dose of OROXAT (see SmPC sections 4.3,
                                 4.6).
                             </p>
                             <h4>Misuse</h4>
@@ -433,13 +433,13 @@ export default function SafetyProfile({}: Props) {
                             </p>
                             <h4>Excipients</h4>
                             <p>
-                                EVRENZO contains lactose. Patients with rare
+                                OROXAT contains lactose. Patients with rare
                                 hereditary problems of galactose intolerance,
                                 total lactase deficiency or glucose-galactose
                                 malabsorption should not take this medicinal
-                                product. EVRENZO contains Allura Red AC
+                                product. OROXAT contains Allura Red AC
                                 aluminium lake (see SmPC section 6.1) which may
-                                cause allergic reactions. EVRENZO contains
+                                cause allergic reactions. OROXAT contains
                                 traces of soya lecithin. Patients who are
                                 allergic to peanut or soya, should not use this
                                 medicinal product.
@@ -456,7 +456,7 @@ export default function SafetyProfile({}: Props) {
                         </section>
                         <section id="the-cardiovascular-safety-of-oroxat-was-assessed-in-a-meta-analysis-of-adjudicated-major-adverse-cardiovascular-events">
                             <h1>
-                                The cardiovascular safety of EVRENZO was
+                                The cardiovascular safety of OROXAT was
                                 assessed in a meta-analysis of adjudicated major
                                 adverse cardiovascular events
                             </h1>
@@ -480,7 +480,7 @@ export default function SafetyProfile({}: Props) {
                                         on-treatment analyses support no
                                         evidence of increased cardiovascular
                                         safety or mortality risk between the ESA
-                                        and EVRENZO arms
+                                        and OROXAT arms
                                     </p>
                                     <p className="!mb-0">
                                         Hazard ratios (HR) for MACE, MACE+ and
@@ -494,7 +494,7 @@ export default function SafetyProfile({}: Props) {
                                     <p>
                                         In patients stable on dialysis (&gt;4
                                         months) and stable on ESA, converting to
-                                        EVRENZO was associated with HRs of 1.18,
+                                        OROXAT was associated with HRs of 1.18,
                                         1.03 and 1.23 for MACE, MACE+ and ACM
                                         respectively
                                     </p>
@@ -518,11 +518,11 @@ export default function SafetyProfile({}: Props) {
                         </section>
                         <section id="no-increase-in-cv-or-mortality-risk-with-oroxat-compared-with-esa-in-patients-with-ndd-and-idd-ckd-ot">
                             <h1>
-                                No increase in CV or mortality risk with EVRENZO
+                                No increase in CV or mortality risk with OROXAT
                                 compared with ESA in patients with NDD- and
                                 IDD-CKD (OT)*
                             </h1>
-                            <h4>HR EVRENZO vs ESA (95% CI)</h4>
+                            <h4>HR OROXAT vs ESA (95% CI)</h4>
                             <Image
                                 className="image w-full"
                                 src={Safety1}
@@ -553,10 +553,10 @@ export default function SafetyProfile({}: Props) {
                             <p>
                                 Baseline characteristics and treatment
                                 discontinuation rates were comparable between
-                                the pooled EVRENZO and pooled ESA patients. The
+                                the pooled OROXAT and pooled ESA patients. The
                                 on-treatment analyses support no evidence of
                                 increased cardiovascular safety or mortality
-                                risk with EVRENZO compared with ESA in patients
+                                risk with OROXAT compared with ESA in patients
                                 with symptomatic anaemia associated with NDD-CKD
                                 or IDD-CKD.
                             </p>
@@ -573,7 +573,7 @@ export default function SafetyProfile({}: Props) {
                                         </tr>
                                         <tr>
                                             <th>
-                                                EVRENZO
+                                                OROXAT
                                                 <br />
                                                 n=1,083
                                             </th>
@@ -583,7 +583,7 @@ export default function SafetyProfile({}: Props) {
                                                 n=1,059
                                             </th>
                                             <th>
-                                                EVRENZO
+                                                OROXAT
                                                 <br />
                                                 n=1,083
                                             </th>
@@ -593,7 +593,7 @@ export default function SafetyProfile({}: Props) {
                                                 n=1,059
                                             </th>
                                             <th>
-                                                EVRENZO
+                                                OROXAT
                                                 <br />
                                                 n=1,083
                                             </th>
@@ -654,7 +654,7 @@ export default function SafetyProfile({}: Props) {
                                 on-treatment.
                             </p>
                             <p>
-                                *Please see EVRENZO SmPC for further information
+                                *Please see OROXAT SmPC for further information
                                 on CV and mortality risk.
                             </p>
                             <h4>
@@ -668,7 +668,7 @@ export default function SafetyProfile({}: Props) {
                                 on ESA treatment is only to be considered when
                                 there is a valid clinical reason.
                             </p>
-                            <h3>HR EVRENZO vs ESA (95% CI)</h3>
+                            <h3>HR OROXAT vs ESA (95% CI)</h3>
                             <div className="holder">
                                 <Image
                                     className="image w-full"
@@ -693,7 +693,7 @@ export default function SafetyProfile({}: Props) {
                                 analysis)
                             </h4>
                             <p>
-                                Patients allocated to EVRENZO were switched from
+                                Patients allocated to OROXAT were switched from
                                 an ESA at the start of the study. The inherent
                                 risk in switching to any new treatment vs.
                                 remaining on a treatment with a stabilised Hb
@@ -714,7 +714,7 @@ export default function SafetyProfile({}: Props) {
                                         </tr>
                                         <tr>
                                             <th>
-                                                EVRENZO
+                                                OROXAT
                                                 <br />
                                                 n=1,594
                                             </th>
@@ -724,7 +724,7 @@ export default function SafetyProfile({}: Props) {
                                                 n=1,594
                                             </th>
                                             <th>
-                                                EVRENZO
+                                                OROXAT
                                                 <br />
                                                 n=1,594
                                             </th>
@@ -734,7 +734,7 @@ export default function SafetyProfile({}: Props) {
                                                 n=1,594
                                             </th>
                                             <th>
-                                                EVRENZO
+                                                OROXAT
                                                 <br />
                                                 n=1,594
                                             </th>
@@ -793,13 +793,13 @@ export default function SafetyProfile({}: Props) {
                                 stable-dialysis-dependent.
                             </p>
                             <p>
-                                *Please see EVRENZO SmPC for further information
+                                *Please see OROXAT SmPC for further information
                                 on CV and mortality risk.
                             </p>
                         </section>
                         <section id="initial-hb-monitoring-requirements-for-oroxat-are-similar-to-other-treatments-for-symptomatic-anaemia-associated-with-ckd">
                             <h1>
-                                Initial Hb monitoring requirements for EVRENZO
+                                Initial Hb monitoring requirements for OROXAT
                                 are similar to other treatments for symptomatic
                                 anaemia associated with CKD
                             </h1>
@@ -816,7 +816,7 @@ export default function SafetyProfile({}: Props) {
                                     thrombotic compIications9
                                 </li>
                                 <li>
-                                    For patients started on EVRENZO, Hb levels
+                                    For patients started on OROXAT, Hb levels
                                     should be monitored every 2 weeks until the
                                     target Hb level of 10-12 g/dL is achieved
                                     and stabilised, and every 4 weeks thereafter
@@ -824,7 +824,7 @@ export default function SafetyProfile({}: Props) {
                                 </li>
                             </ul>
                             <h4>
-                                With EVRENZO, the dose can be individualised to
+                                With OROXAT, the dose can be individualised to
                                 achieve and maintain target levels of 10-12
                                 g/dL.
                             </h4>

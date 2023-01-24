@@ -35,8 +35,8 @@ const sectionLinks = [
         href: "#the-burden-on-patients",
     },
     {
-        title: "Patient benefits of EVRENZO",
-        href: "#patient-benefits-of-evrenzo",
+        title: "Patient benefits of OROXAT",
+        href: "#patient-benefits-of-oroxat",
     },
     {
         title: "Which of your patients may benefit most?",
@@ -175,10 +175,10 @@ export default function PatientPerspective({}: Props) {
                                 gastrointestinal; Hb, haemoglobin.
                             </p>
                         </section>
-                        <section id="patient-benefits-of-evrenzo">
-                            <h1>Patient benefits of EVRENZO</h1>
+                        <section id="patient-benefits-of-oroxat">
+                            <h1>Patient benefits of OROXAT</h1>
                             <h3>
-                                EVRENZO helps suitable patients achieve and
+                                OROXAT helps suitable patients achieve and
                                 maintain Hb targets
                             </h3>
                             <p className="italic">
@@ -234,13 +234,13 @@ export default function PatientPerspective({}: Props) {
                             </ul>
                             <div className="flex flex-col gap-y-1 px-8 py-6 border border-neutral-700 holder">
                                 <p className="!mb-0">
-                                    EVRENZO is an oral tablet that provides Hb
+                                    OROXAT is an oral tablet that provides Hb
                                     correction and maintenance comparable to
                                     ESA, with reduced use of IV iron
                                 </p>
                             </div>
                             <h3>
-                                How can your patients get more out of EVRENZO?
+                                How can your patients get more out of OROXAT?
                             </h3>
                             <p>
                                 The leaflet below provide educational materials
@@ -274,7 +274,6 @@ export default function PatientPerspective({}: Props) {
                     </div>
                 </Layout2>
             </Layout1>
-            <Size />
         </>
     );
 }
