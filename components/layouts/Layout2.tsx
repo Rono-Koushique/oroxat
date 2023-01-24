@@ -2,7 +2,7 @@ import React from "react";
 import BreadCrumb from "../extras/BreadCrumb";
 import Wall from "../containers/Wall";
 import Frame from "../containers/Frame";
-import SideNav from "../navbars/SideNav";
+import SideNav from "../navbars/PageNav";
 
 interface PageLink {
     title: string;

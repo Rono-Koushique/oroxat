@@ -1,6 +1,6 @@
 import React from "react";
 import Wall from "../containers/Wall";
-import Frame from "../containers/Frame";
+import VFrame from "../containers/VFrame";
 import Wallpaper from "public/images/home-2.jpg";
 import Image from "next/image";
 import FooterBtn from "../buttons/FooterBtn";
@@ -9,16 +9,8 @@ type Props = {};
 
 export default function HomeTell({}: Props) {
     return (
-        <Wall>
-            <Frame
-                className="relative w-full flex justify-center px-8 py-16 
-                            lg:px-12 lg:py-20"
-            >
-                <Image
-                    className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
-                    src={Wallpaper}
-                    alt=""
-                />
+        <Wall className="relative">
+            <VFrame className="items-center">
                 <div className="flex flex-col items-center bg-white w-fit p-8 md:px-16 lg:py-8 gap-y-3 rounded-md">
                     <h2 className="text-2xl md:text-3xl font-semibold text-fuchsia-700">
                         Tell me more
@@ -30,7 +22,12 @@ export default function HomeTell({}: Props) {
                         Request Further Information
                     </FooterBtn>
                 </div>
-            </Frame>
+            </VFrame>
+            <Image
+                className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
+                src={Wallpaper}
+                alt=""
+            />
         </Wall>
     );
 }

@@ -4,5 +4,5 @@ interface Props {
 }
 
 export default function Frame({ children, className }: Props) {
-    return <div className={className ? className : ''}>{children}</div>;
+    return <div className={className!}>{children}</div>;
 }

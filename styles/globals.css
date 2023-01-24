@@ -3,6 +3,9 @@
 @import "tailwindcss/utilities";
 
 @layer base {
+    * {
+        /* border: 1px solid; */
+    }
     html {
         -webkit-tap-highlight-color: transparent;
     }
@@ -15,6 +18,10 @@
 }
 
 @layer components {
+    .cursor-pointer {
+        /* @apply relative */
+    }
+
     .footer-link {
         @apply px-2;
     }

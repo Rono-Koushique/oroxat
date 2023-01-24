@@ -16,7 +16,7 @@ const allLinks = [
         href: '/evidence'
     },
     {
-        title: 'cv risk and safety profile',
+        title: 'cv risk and safety',
         href: '/safety-profile'
     },
     {
@@ -35,10 +35,10 @@ const allLinks = [
         title: 'expert viewpoint',
         href: '/viewpoint'
     },
-    {
-        title: 'renal anaemia academy',
-        href: '/renal-anaemia'
-    },
+    // {
+    //     title: 'renal anaemia academy',
+    //     href: '/renal-anaemia'
+    // },
 ]
 
 export default allLinks
