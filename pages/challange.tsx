@@ -11,6 +11,7 @@ import ReviewSlide from "@/components/slides/ReviewSlide";
 import FooterBtn from "@/components/buttons/FooterBtn";
 import Layout2 from "@/components/layouts/Layout2";
 import AdverseEffect from "@/components/sections/AdverseEffect";
+import Layout3 from "@/components/layouts/Layout3";
 
 const pageLinks = [
     {
@@ -90,7 +91,7 @@ export default function Challange({}: Props) {
                     sidebarTitle="The Challange"
                     currentSection={currentSection}
                 >
-                    <div className="content flex flex-col gap-8">
+                    <Layout3 className="content">
                         <section
                             id="understanding-anaemia-of-ckd"
                             className="flex flex-col"
@@ -232,7 +233,7 @@ export default function Challange({}: Props) {
                             <p>EVZ_2022_0252_UK / August 2022</p>
                             <AdverseEffect />
                         </section>
-                    </div>
+                    </Layout3>
                 </Layout2>
             </Layout1>
         </>

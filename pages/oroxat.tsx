@@ -11,7 +11,9 @@ import Oroxat6 from "public/images/page-oroxat/oroxat6.jpeg";
 import Image from "next/image";
 import ReviewSlide from "@/components/slides/ReviewSlide";
 import FooterBtn from "@/components/buttons/FooterBtn";
+import LinkBtn from "@/components/buttons/LinkBtn";
 import AdverseEffect from "@/components/sections/AdverseEffect";
+import Layout3 from "@/components/layouts/Layout3";
 
 const pageLinks = [
     {
@@ -97,7 +99,7 @@ export default function Oroxat({}: Props) {
                     sidebarTitle="Introducing OROXAT"
                     currentSection={currentSection}
                 >
-                    <div className="content flex flex-col gap-8">
+                    <Layout3 className="content">
                         <section id="the-hif-pathway" className="flex flex-col">
                             <h1>The HIF pathway</h1>
                             <h3>
@@ -132,7 +134,9 @@ export default function Oroxat({}: Props) {
                                 activated and the HIF-α subunit is rapidly
                                 degraded via HIF prolyl-hydroxylase (HIF-PH):
                             </p>
-                            <Image className="image" src={Oroxat1} alt="" />
+                            <div className="holder">
+                                <Image src={Oroxat1} alt="" />
+                            </div>
                             <p>
                                 In hypoxic conditions, the HIF pathway is
                                 activated: the HIF-α subunit is not degraded,
@@ -141,7 +145,9 @@ export default function Oroxat({}: Props) {
                                 target hypoxia response genes involved in
                                 erythropoiesis, including:
                             </p>
-                            <Image className="image" src={Oroxat2} alt="" />
+                            <div className="holder">
+                                <Image src={Oroxat2} alt="" />
+                            </div>
                             <p>
                                 In CKD, oxygen sensing via HIF is impaired, and
                                 this contributes to the development of anaemia.
@@ -170,7 +176,9 @@ export default function Oroxat({}: Props) {
                                 OROXAT mimics the body&apos;s natural response
                                 to hypoxia by activating the HIF pathway
                             </h3>
-                            <Image className="image" src={Oroxat3} alt="" />
+                            <div className="holder">
+                                <Image src={Oroxat3} alt="" />
+                            </div>
                             <p>
                                 OROXAT inhibits HIF-PH, thus preventing
                                 breakdown of HIF-α and activating the HIF
@@ -198,14 +206,18 @@ export default function Oroxat({}: Props) {
                                 well as helping to overcome the effects of
                                 inflammation by <b>suppressing hepcidin</b>.
                             </p>
-                            <Image className="image" src={Oroxat4} alt="" />
-                            <p>See how OROXAT works:</p>
-                            <ReviewSlide
-                                className="image"
-                                imgSrc={Oroxat5}
-                                title="Professor Anjon Banerjee on kidney diseases"
-                                asSlide={false}
-                            />
+                            <div className="holder">
+                                <Image src={Oroxat4} alt="" />
+                            </div>
+                            <h3>See how OROXAT works:</h3>
+                            <div className="holder">
+                                <ReviewSlide
+                                    className="image"
+                                    imgSrc={Oroxat5}
+                                    title="Professor Anjon Banerjee on kidney diseases"
+                                    asSlide={false}
+                                />
+                            </div>
                             <p className="body-p">
                                 OROXAT is indicated for the treatment of adult
                                 patients with symptomatic anaemia associated
@@ -227,7 +239,9 @@ export default function Oroxat({}: Props) {
                                 By inhibiting HIF-PH, OROXAT stimulates a
                                 coordinated erythropoietic response that:
                             </p>
-                            <Image className="image" src={Oroxat6} alt="" />
+                            <div className="holder">
+                                <Image src={Oroxat6} alt="" />
+                            </div>
                             <p className="body-caption text-left">
                                 Hb, haemoglobin; HIF-PH, hypoxia-inducible
                                 factor prolyl-hydroxylase; RBC, red blood cell.
@@ -254,9 +268,7 @@ export default function Oroxat({}: Props) {
                                 approach to the management of anaemia of CKD
                                 than existing treatments.
                             </p>
-                            <p>
-                                OROXAT helps patients with anaemia of CKD:
-                            </p>
+                            <p>OROXAT helps patients with anaemia of CKD:</p>
                             <ul>
                                 <li>
                                     To achieve and maintain their target Hb
@@ -331,20 +343,20 @@ export default function Oroxat({}: Props) {
                                 and further information on CV and mortality
                                 risk.
                             </p>
-                            <div className="lg:w-[20rem] flex flex-col gap-2">
-                                <FooterBtn onClick={() => {}}>
+                            <div className="holder lg:w-[20rem] flex flex-col gap-2">
+                                <LinkBtn href="/evidence" >
                                     EXAMINE THE EVIDENCE
-                                </FooterBtn>
-                                <FooterBtn onClick={() => {}}>
+                                </LinkBtn>
+                                <LinkBtn href="/patient-perspective">
                                     See the patient perspective
-                                </FooterBtn>
-                                <FooterBtn onClick={() => {}}>
+                                </LinkBtn>
+                                <LinkBtn href="/viewpoint">
                                     Listen to expert opinion
-                                </FooterBtn>
+                                </LinkBtn>
                             </div>
-                            <AdverseEffect />
+                            <AdverseEffect className="mt-8" />
                         </section>
-                    </div>
+                    </Layout3>
                 </Layout2>
             </Layout1>
         </>
