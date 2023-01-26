@@ -11,8 +11,8 @@ import Ndd2 from "public/images/page-evidence/ndd2.jpg";
 import Ndd3 from "public/images/page-evidence/ndd3.jpg";
 import Ndd4 from "public/images/page-evidence/ndd4.jpg";
 import Ndd5 from "public/images/page-evidence/ndd5.jpg";
-import GridCard1 from "@/components/cards/GridCard1";
 import AdverseEffect from "@/components/sections/AdverseEffect";
+
 
 const nddInfo = [
 {

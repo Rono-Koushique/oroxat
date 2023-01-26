@@ -2,11 +2,12 @@ import React from "react";
 import Head from "next/head";
 import Layout1 from "@/components/layouts/Layout1";
 import Layout2 from "@/components/layouts/Layout2";
+import Layout3 from "@/components/layouts/Layout3";
 import AdverseEffect from "@/components/sections/AdverseEffect";
-import FooterBtn from "@/components/buttons/FooterBtn";
 import Image from "next/image";
 import Safety1 from "public/images/page-safety/safety1.png";
 import Safety2 from "public/images/page-safety/safety2.png";
+import LinkBtn from "@/components/buttons/LinkBtn";
 
 const pageLinks = [
     {
@@ -56,8 +57,11 @@ export default function SafetyProfile({}: Props) {
             sectionLinks.forEach((section) => {
                 const element = document.getElementById(section.href.slice(1));
                 const elementPosition = element?.offsetTop;
-                
-                if (elementPosition && scrollPosition+100 >= elementPosition) {
+
+                if (
+                    elementPosition &&
+                    scrollPosition + 100 >= elementPosition
+                ) {
                     setCurrentSection(section.href.slice(1));
                 }
             });
@@ -93,7 +97,7 @@ export default function SafetyProfile({}: Props) {
                     sidebarTitle="CV safety and general safety profile"
                     currentSection={currentSection}
                 >
-                    <div className="content flex flex-col gap-8">
+                    <Layout3 className="content">
                         <section
                             id="the-safety-profile-of-oroxat-has-been-evaluated-in-an-extensive-range-of-clinical-studies"
                             className="flex flex-col"
@@ -223,7 +227,7 @@ export default function SafetyProfile({}: Props) {
                                 patients who were on dialysis while receiving
                                 roxadustat.
                             </p>
-                            <p>
+                            <p className="!mb-0">
                                 Frequency categories are defined as follows:
                                 very common (&gt;1/10); common (&gt;1/100 to
                                 &lt;1/10); uncommon (&gt;1/1,000 to &lt;1/100);
@@ -231,7 +235,9 @@ export default function SafetyProfile({}: Props) {
                                 (&lt;1/10,000); not known (cannot be estimated
                                 from the available data).
                             </p>
-                            <AdverseEffect />
+                            <div className="holder">
+                                <AdverseEffect />
+                            </div>
                             <p className="fade">
                                 CKD, chronic kidney disease; DVT, deep vein
                                 thrombosis; MedDRA, medical dictionary for
@@ -285,21 +291,24 @@ export default function SafetyProfile({}: Props) {
                                 weeks after the start of treatment (see SmPC
                                 section 4.2).
                             </p>
-                            <p>
+                            <p className="!mb-0">
                                 Conversion of dialysis patients otherwise stable
                                 on ESA treatment is only to be considered when
                                 there is a valid clinical reason (see SmPC
                                 section 4.2). Conversion of stable ESA treated
                                 patients with anaemia associated with CKD and
                                 not on dialysis was not studied. A decision to
-                                treat these patients with OROXAT should be
-                                based on a benefit risk consideration for the
+                                treat these patients with OROXAT should be based
+                                on a benefit risk consideration for the
                                 individual patient.
                             </p>
                             <div className="holder">
-                                <FooterBtn onClick={() => {}}>
+                                <LinkBtn
+                                    className="w-fit"
+                                    href="/safety-profile#the-cardiovascular-safety-of-oroxat-was-assessed-in-a-meta-analysis-of-adjudicated-major-adverse-cardiovascular-events"
+                                >
                                     See the cv safety profile
-                                </FooterBtn>
+                                </LinkBtn>
                             </div>
                             <h4>Thrombotic vascular events</h4>
                             <p>
@@ -401,28 +410,27 @@ export default function SafetyProfile({}: Props) {
                             </p>
                             <h4>Hepatic impairment</h4>
                             <p>
-                                Caution is warranted when OROXAT is
-                                administered to patients with moderate hepatic
-                                impairment (Child-Pugh class B). OROXAT is not
-                                recommended for use in patients with severe
-                                hepatic impairment (Child-Pugh class C) (see
-                                SmPC section 5.2).
+                                Caution is warranted when OROXAT is administered
+                                to patients with moderate hepatic impairment
+                                (Child-Pugh class B). OROXAT is not recommended
+                                for use in patients with severe hepatic
+                                impairment (Child-Pugh class C) (see SmPC
+                                section 5.2).
                             </p>
                             <h4>Pregnancy and contraception</h4>
                             <p>
-                                OROXAT should not be initiated in women
-                                planning on becoming pregnant, during pregnancy
-                                or when anaemia associated with CKD is diagnosed
-                                during pregnancy. In such cases, alternative
-                                therapy should be started, if appropriate. If
-                                pregnancy occurs while OROXAT is being
-                                administered, treatment should be discontinued
-                                and alternative treatment started, if
-                                appropriate. Women of chiId bearing potential
-                                must use highly effective contraception during
-                                treatment and for at least one week after the
-                                last dose of OROXAT (see SmPC sections 4.3,
-                                4.6).
+                                OROXAT should not be initiated in women planning
+                                on becoming pregnant, during pregnancy or when
+                                anaemia associated with CKD is diagnosed during
+                                pregnancy. In such cases, alternative therapy
+                                should be started, if appropriate. If pregnancy
+                                occurs while OROXAT is being administered,
+                                treatment should be discontinued and alternative
+                                treatment started, if appropriate. Women of
+                                chiId bearing potential must use highly
+                                effective contraception during treatment and for
+                                at least one week after the last dose of OROXAT
+                                (see SmPC sections 4.3, 4.6).
                             </p>
                             <h4>Misuse</h4>
                             <p>
@@ -437,12 +445,12 @@ export default function SafetyProfile({}: Props) {
                                 hereditary problems of galactose intolerance,
                                 total lactase deficiency or glucose-galactose
                                 malabsorption should not take this medicinal
-                                product. OROXAT contains Allura Red AC
-                                aluminium lake (see SmPC section 6.1) which may
-                                cause allergic reactions. OROXAT contains
-                                traces of soya lecithin. Patients who are
-                                allergic to peanut or soya, should not use this
-                                medicinal product.
+                                product. OROXAT contains Allura Red AC aluminium
+                                lake (see SmPC section 6.1) which may cause
+                                allergic reactions. OROXAT contains traces of
+                                soya lecithin. Patients who are allergic to
+                                peanut or soya, should not use this medicinal
+                                product.
                             </p>
                             <p className="fade">
                                 CKD, chronic kidney disease; CNS, central
@@ -456,9 +464,9 @@ export default function SafetyProfile({}: Props) {
                         </section>
                         <section id="the-cardiovascular-safety-of-oroxat-was-assessed-in-a-meta-analysis-of-adjudicated-major-adverse-cardiovascular-events">
                             <h1>
-                                The cardiovascular safety of OROXAT was
-                                assessed in a meta-analysis of adjudicated major
-                                adverse cardiovascular events
+                                The cardiovascular safety of OROXAT was assessed
+                                in a meta-analysis of adjudicated major adverse
+                                cardiovascular events
                             </h1>
                             <p>
                                 <b>ACM:</b> all-cause mortality
@@ -523,11 +531,13 @@ export default function SafetyProfile({}: Props) {
                                 IDD-CKD (OT)*
                             </h1>
                             <h4>HR OROXAT vs ESA (95% CI)</h4>
-                            <Image
-                                className="image w-full"
-                                src={Safety1}
-                                alt=""
-                            />
+                            <div className="holder">
+                                <Image
+                                    className="w-full"
+                                    src={Safety1}
+                                    alt=""
+                                />
+                            </div>
                             <p>
                                 <b>ACM:</b> all-cause mortality
                             </p>
@@ -831,9 +841,11 @@ export default function SafetyProfile({}: Props) {
                             <p className="fade">
                                 CKD, chronic kidney disease; Hb, haemoglobin.
                             </p>
-                            <AdverseEffect className="mt-8" />
+                            <div className="mt-8">
+                                <AdverseEffect />
+                            </div>
                         </section>
-                    </div>
+                    </Layout3>
                 </Layout2>
             </Layout1>
         </>

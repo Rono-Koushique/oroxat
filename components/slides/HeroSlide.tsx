@@ -11,9 +11,9 @@ export default function HeroSlide({ imgSrc, title }: Props) {
         <div className="h-[76vh] lg:h-[82vh] w-full relative">
             <Image
                 className="h-full w-full object-cover"
+                priority={true}
                 src={imgSrc}
                 alt=""
-                priority={true}
             />
             <div
                 className="absolute top-0 left-1/2 h-full w-full max-w-6xl 

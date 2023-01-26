@@ -16,7 +16,7 @@ export default function Header({}: Props) {
     return (
         <header>
             <Wall>
-                <Frame className="max-w-6xl mx-auto px-8 lg:px-12 py-4 flex items-center">
+                <Frame className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12 py-4 flex items-center">
                     <Link href="/">
                         <Image
                             className="h-12 w-fit cursor-pointer"

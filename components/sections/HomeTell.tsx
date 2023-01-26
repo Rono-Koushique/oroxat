@@ -25,6 +25,7 @@ export default function HomeTell({}: Props) {
             </VFrame>
             <Image
                 className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
+                priority={true}
                 src={Wallpaper}
                 alt=""
             />

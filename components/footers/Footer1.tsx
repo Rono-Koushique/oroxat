@@ -12,8 +12,8 @@ export default function Footer1({}: Props) {
     return (
         <footer>
             <Wall className="bg-fuchsia-700">
-                <Frame className="max-w-6xl mx-auto flex flex-col items-center gap-4 justify-between px-8 py-16
-                            md:flex-row
+                <Frame className="max-w-6xl mx-auto flex flex-col items-center gap-4 justify-between px-6 py-16
+                            md:px-8 md:flex-row
                             lg:px-12 lg:py-20">
                     {/* description */}
                     <div className="flex flex-col gap-y-3 text-neutral-100 text-sm">

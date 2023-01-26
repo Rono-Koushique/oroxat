@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import Layout1 from "@/components/layouts/Layout1";
 import Layout2 from "@/components/layouts/Layout2";
-import FooterBtn from "@/components/buttons/FooterBtn";
 import AdverseEffect from "@/components/sections/AdverseEffect";
 import Image from "next/image";
 import Use1 from "public/images/page-use/use_1.jpeg";
@@ -10,6 +9,8 @@ import Use2 from "public/images/page-use/use_2.png";
 import Use3 from "public/images/page-use/use_3.png";
 import Use4 from "public/images/page-use/use_4.jpg";
 import Use5 from "public/images/page-use/use_5.jpg";
+import Layout3 from "@/components/layouts/Layout3";
+import LinkBtn from "@/components/buttons/LinkBtn";
 
 const pageLinks = [
     {
@@ -87,19 +88,25 @@ export default function HowToUseOroxat({}: Props) {
                     sidebarTitle="How to use OROXAT"
                     currentSection={currentSection}
                 >
-                    <div className="content flex flex-col gap-8">
+                    <Layout3 className="content">
                         <section
                             id="oral-treatment-with-tiw-dosage"
                             className="flex flex-col"
                         >
-                            <h1>
+                            <h1 className="!mb-0">
                                 OROXAT offers the convenience of oral
                                 administration1 with a three times per week
                                 tablet on non-consecutive days
                             </h1>
-                            <Image className="image" src={Use1} alt="" />
-                            <h3>The convenience of oral administration1</h3>
-                            <Image className="image" src={Use2} alt="" />
+                            <div className="holder">
+                                <Image src={Use1} alt="" />
+                            </div>
+                            <h3 className="!mb-0">
+                                The convenience of oral administration1
+                            </h3>
+                            <div className="holder">
+                                <Image src={Use2} alt="" />
+                            </div>
                             <ul>
                                 <li>
                                     Oral treatment - does not have to be
@@ -117,8 +124,10 @@ export default function HowToUseOroxat({}: Props) {
                             <p className="fade">
                                 Patients can start on the day that suits them
                             </p>
-                            <h3>EXAMPLE SCHEDULE</h3>
-                            <Image className="image" src={Use3} alt="" />
+                            <h3 className="!mb-0">EXAMPLE SCHEDULE</h3>
+                            <div className="holder">
+                                <Image src={Use3} alt="" />
+                            </div>
                             <p>
                                 OROXAT film-coated tablets are to be taken
                                 orally with or without food. Tablets are to be
@@ -150,7 +159,7 @@ export default function HowToUseOroxat({}: Props) {
                                     OROXAT compared to ESAs
                                 </li>
                             </ul>
-                            <h4>
+                            <h4 className="!mb-0">
                                 <i>
                                     Dosage instructions and reminders are
                                     available in our digital patient leaflet,
@@ -159,9 +168,12 @@ export default function HowToUseOroxat({}: Props) {
                                 </i>
                             </h4>
                             <div className="holder">
-                                <FooterBtn onClick={() => {}} className="w-fit">
+                                <LinkBtn
+                                    href="/patient-perspective#which-of-your-patients-will-benefit-most"
+                                    className="w-fit"
+                                >
                                     SEE PATIENTS BENIFITS SECTION MATERIALS
-                                </FooterBtn>
+                                </LinkBtn>
                             </div>
                             <p className="fade">
                                 IV, intravenous; TIW, three times weekly..
@@ -307,17 +319,15 @@ export default function HowToUseOroxat({}: Props) {
                             <div className="flex flex-row gap-6 holder">
                                 <div className="flex flex-col gap-y-0">
                                     <p>Patients not on dialysis?</p>
-                                    <Image
-                                        src={Use4}
-                                        alt=""
-                                    />
+                                    <div className="holder">
+                                        <Image src={Use4} alt="" />
+                                    </div>
                                 </div>
                                 <div className="flex flex-col gap-y-0">
                                     <p>Patients new to dialysis?</p>
-                                    <Image
-                                        src={Use5}
-                                        alt=""
-                                    />
+                                    <div className="holder">
+                                        <Image src={Use5} alt="" />
+                                    </div>
                                 </div>
                             </div>
                             <p>How to start patients on OROXAT:</p>
@@ -360,21 +370,22 @@ export default function HowToUseOroxat({}: Props) {
                                 </li>
                             </ul>
                             <div className="holder">
-                                <FooterBtn onClick={() => {}} className="w-fit">
+                                <LinkBtn
+                                    href="/patient-perspective#the-burden-on-patients"
+                                    className="w-fit"
+                                >
                                     DISCOVER THE BENIFITS OF OROXATS TO PATIENTS
-                                </FooterBtn>
+                                </LinkBtn>
                             </div>
                             <p className="fade">
                                 ESA, erythropoiesis-stimulating agent; Hb,
                                 haemoglobin.
                             </p>
-                            <p>
-                                Job Code: EVZ_2022_0306_UK Date of Preparation:
-                                September 2022
-                            </p>
+                            <div className="mt-8">
+                                <AdverseEffect />
+                            </div>
                         </section>
-                        <AdverseEffect />
-                    </div>
+                    </Layout3>
                 </Layout2>
             </Layout1>
         </>
