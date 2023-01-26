@@ -16,7 +16,7 @@ type Props = {
 export default function BreadCrumb({ pageLinks }: Props) {
     return (
         <Wall>
-            <Frame className="max-w-6xl mx-auto px-8 lg:px-12 py-6">
+            <Frame className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12 py-6">
                 <nav className="flex" aria-label="Breadcrumb">
                     <ol className="inline-flex items-center space-x-1">
                         {pageLinks.map((pageLink, idx) => {

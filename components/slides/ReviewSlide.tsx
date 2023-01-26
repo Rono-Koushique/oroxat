@@ -26,6 +26,7 @@ export default function ReviewSlide({
             <div className="h-fit w-full relative">
                 <Image
                     className={`h-[16rem] md:h-[28rem] w-full object-cover ${imgClassName!}`}
+                    priority={true}
                     src={imgSrc}
                     alt=""
                 />

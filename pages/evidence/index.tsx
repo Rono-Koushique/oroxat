@@ -148,7 +148,7 @@ export default function evidence({}: Props) {
                                         comparator
                                     </p>
                                 </div>
-                                <p className="fade">
+                                <p className="fade !mb-0">
                                     CKD, chronic kidney disease; DD,
                                     dialysis-dependent; ESA,
                                     erythropoiesis-stimulating agent; Hb,
