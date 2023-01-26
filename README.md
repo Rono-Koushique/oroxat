@@ -1,38 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Oroxat
+
+A website built using Next.js, TypeScript, and Tailwind CSS that provides information about a medicine called "Oroxat". Oroxat is the first HIF-PH inhibitor to have gained approval for the treatment of adult patients with symptomatic anaemia associated with CKD. It mimics the body's physiological response to hypoxia at high altitude by increasing production of erythropoietin and improving iron availability.
 
 ## Getting Started
 
-First, run the development server:
+These instructions will help you to run the project on your local machine for development and testing purposes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Node.js](https://nodejs.org)
+- [Vercel CLI](https://vercel.com/download)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Installing
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Clone the repository: `git clone https://github.com/username/oroxat.git`
+2. Install the dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) to view the website in the browser.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The website is deployed using Vercel. To deploy your own version, you will need to [create an account](https://vercel.com/) and [connect to your GitHub](https://vercel.com/docs/v2/git-integrations/vercel-for-github) or [GitLab](https://vercel.com/docs/v2/git-integrations/vercel-for-gitlab) repository.
 
-## Learn More
+## Built With
 
-To learn more about Next.js, take a look at the following resources:
+* [Next.js](https://nextjs.org/) - A React Framework for building server-rendered React applications
+* [TypeScript](https://www.typescriptlang.org/) - A super-set of JavaScript that adds types and other features
+* [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Please read [CONTRIBUTING.md](https://github.com/username/oroxat/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Deploy on Vercel
+## Authors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **Rono Koushique** - *Frontend* - [Rono-Koushique](https://github.com/Rono-Koushique)
+* **Apon Masrur** - *Frontend* - [masrur4](https://github.com/masrur4)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+See also the list of [contributors](https://github.com/username/oroxat/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/username/oroxat/blob/master/LICENSE) file for details.
