@@ -3,13 +3,18 @@ import Wall from "../containers/Wall";
 import Frame from "../containers/Frame";
 
 type Props = {
+    className?: string;
     children: React.ReactNode | React.ReactNode[];
 };
 
-export default function Layout3({ children }: Props) {
+export default function Layout3({ className, children }: Props) {
     return (
         <Wall>
-            <Frame className="pt-4 pb-16 lg:pb-20">{children}</Frame>
+            <Frame
+                className={`flex flex-col gap-8 md:gap-16 ${className!}`}
+            >   
+                {children}
+            </Frame>
         </Wall>
     );
 }

@@ -33,13 +33,14 @@ export default function Layout2({
         <>
             <BreadCrumb pageLinks={pageLinks} />
             <Wall>
-                <Frame className="grid max-w-6xl grid-cols-1 px-8 pt-4 pb-16 mx-auto lg:grid-cols-9 gap-x-8 lg:px-12 lg:pb-20">
+                <Frame className="max-w-6xl grid grid-cols-1 px-6 pt-4 pb-16 mx-auto gap-8
+                                lg:grid-cols-9 lg:px-12 lg:pb-20">
                     <SideNav
                         title={sidebarTitle}
                         sidebarLinks={sectionLinks}
                         currentSection={currentSection}
                     />
-                    <Frame className="flex flex-col w-full lg:col-span-6 h-fit gap-y-16">
+                    <Frame className="w-full h-fit lg:col-span-6">
                         {children}
                     </Frame>
                 </Frame>
